@@ -1,3 +1,4 @@
+import Search from "./components/Search";
 import styled from "styled-components";
 
 const StyledMenu = styled.header`
@@ -24,12 +25,13 @@ const StyledMenu = styled.header`
   }
 `;
 
-export default function Menu() {
+export default function Menu({ valorDoFiltro, setValorDoFiltro }) {
   return (
     <StyledMenu>
       <div>
         <Logo />
       </div>
+      <Search valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro} />
     </StyledMenu>
   );
 }
