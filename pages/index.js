@@ -1,4 +1,3 @@
-import { CSSReset } from "../src/components/CSSReset";
 import Menu from "../src/components/Menu";
 import React from "react"
 import { StyledTimeline } from "../src/components/Timeline";
@@ -10,12 +9,11 @@ function HomePasge() {
     // background: "red"
    };
 
-  //console.log(config.playlists);
-const [valorDoFiltro, setValorDoFiltro] = React.useState("");
-//const valorDoFiltro = "Angular";
+  const [valorDoFiltro, setValorDoFiltro] = React.useState("");
+
   return (
         <>
-        <CSSReset />
+
         <div style={{
             display:"flex", 
             flexDirection:"column", 
@@ -39,6 +37,9 @@ export default HomePasge;
 // }
 
 const StyledHeader = styled.div`
+
+  background-color: ${({ theme}) => theme.backgroundLevel1};
+
   img {
     width: 80px;
     height: 80px;

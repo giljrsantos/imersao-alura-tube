@@ -14,13 +14,18 @@ Nesasa Imersão React vamos aprender como usar as estruturas de dados que temos 
 7. Como trabalhar com StyledComponents;
 8. Vimos como usar Props no React;
 9. Vimos sobre o children do React;
-
-
 ## Resumo da Segunda Aula
 1. Criamos o nosso search.js;
 2. Aprendemos sobre State;
 3. Vimos o conceito de Prop-drilling;
 4. Criamos o banner utilizando Styled Components e passando Props por ele.
+## Resumo da Terceiras Aula
+1. Começamos olhando o Design Systems;
+2. Falamos sobre a importância de ter contratos de cores e valores de Design;
+3. Criamos o componente Dark Mode Switch;
+4. Criamos um state local no nosso componente de Dark Mode Switch;
+5. Começamos a trabalhar esse state para não fazer Prop Drilling e sim ter um contexto que nos permite acessar os dados de forma "global";
+6. E por fim, um Provider que configura quais dados vão estar disponíveis no contexto.
 
 
 
@@ -40,6 +45,16 @@ Nesasa Imersão React vamos aprender como usar as estruturas de dados que temos 
 ## 
 <p align="center">
 <img src="./src/assets/screen-1.png" width="1800" alt="Home">
+</p>
+
+# Modo `LIGHT`.
+<p align="center">
+<img src="./src/assets/screen-3.png" width="1800" alt="Home">
+</p>
+
+# Modo `DARK`.
+<p align="center">
+<img src="./src/assets/screen-2.png" width="1800" alt="Home">
 </p>
 
 
