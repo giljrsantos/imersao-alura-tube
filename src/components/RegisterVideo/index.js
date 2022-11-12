@@ -30,7 +30,7 @@ export default function RegisterVideo(){
     const formCadastro = useForm({
         initialValues: {titulo: "Netdecking Estraga o Magic?", url: "https://www.youtube.com/watch?v=dXihyhYEsEc"}
     });
-    const [formVisivel, setFormVisivel] = React.useState(true);
+    const [formVisivel, setFormVisivel] = React.useState(false);
     
     return (
         <StyledRegisterVideo>
