@@ -26,6 +26,11 @@ Nesasa Imersão React vamos aprender como usar as estruturas de dados que temos 
 4. Criamos um state local no nosso componente de Dark Mode Switch;
 5. Começamos a trabalhar esse state para não fazer Prop Drilling e sim ter um contexto que nos permite acessar os dados de forma "global";
 6. E por fim, um Provider que configura quais dados vão estar disponíveis no contexto.
+## Resumo da Quarda Aula
+1. Importamos os estilos que criamos;
+2. Começamos a trabalhar com formulários;
+3. Vimos que lidar com Forms e State pode ser complexo;
+4. Vimos como criar Custom Hooks.
 
 
 
@@ -42,10 +47,6 @@ Nesasa Imersão React vamos aprender como usar as estruturas de dados que temos 
   } 
 ```
 
-## 
-<p align="center">
-<img src="./src/assets/screen-1.png" width="1800" alt="Home">
-</p>
 
 # Modo `LIGHT`.
 <p align="center">
@@ -55,6 +56,18 @@ Nesasa Imersão React vamos aprender como usar as estruturas de dados que temos 
 # Modo `DARK`.
 <p align="center">
 <img src="./src/assets/screen-2.png" width="1800" alt="Home">
+</p>
+
+
+# Modo `MODAL LIGHT`.
+<p align="center">
+<img src="./src/assets/screen-5.png" width="1800" alt="Home">
+</p>
+
+
+# Modo `MODAL DARK`.
+<p align="center">
+<img src="./src/assets/screen-4.png" width="1800" alt="Home">
 </p>
 
 
