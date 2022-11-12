@@ -3,13 +3,27 @@ import React from "react"
 import { StyledTimeline } from "../src/components/Timeline";
 import config from "../config.json";
 import styled from "styled-components";
+import { videoService } from "../src/services/videoService";
 
-function HomePasge() {
-  const estilosDaHomePage = { 
-    // background: "red"
-   };
+function HomePage() {
+  const service = videoService();
+   const [valorDoFiltro, setValorDoFiltro] = React.useState("");
+   const [playlists, setPlaylists] = React.useState({});
+ 
+   React.useEffect(() => {
+      service.getAllVideos()
+        .then((dados) => {
+          // Forma imutavel
+          const novasPlaylists = { ...playlists }
+          dados.data.forEach((video) => {
+            if(!novasPlaylists[video.playlist]) novasPlaylists[video.playlist] = [];
+            novasPlaylists[video.playlist].push(video);
+          });
+          setPlaylists(novasPlaylists)   
+      });
 
-  const [valorDoFiltro, setValorDoFiltro] = React.useState("");
+     
+   }, []);
 
   return (
         <>
@@ -22,7 +36,8 @@ function HomePasge() {
             {/* Prop Drilling */}
             <Menu valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro} />
             <Header />
-            <TimeLine searchValue={valorDoFiltro} playlists={config.playlists}>
+            {/* <TimeLine searchValue={valorDoFiltro} playlists={config.playlists}> */}
+            <TimeLine searchValue={valorDoFiltro} playlists={playlists}>
               Conteúdo
             </TimeLine>
             </div>
@@ -30,7 +45,7 @@ function HomePasge() {
   );
 }
 
-export default HomePasge;
+export default HomePage;
 
 // function Menu() {
 //   return <div>Menu</div>;

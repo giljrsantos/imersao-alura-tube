@@ -31,6 +31,16 @@ Nesasa Imersão React vamos aprender como usar as estruturas de dados que temos 
 2. Começamos a trabalhar com formulários;
 3. Vimos que lidar com Forms e State pode ser complexo;
 4. Vimos como criar Custom Hooks.
+## Resumo da Quinta Aula
+1. Entender como usar a Fetch API;
+2. Ver a API do GitHub;
+3. Entender os status do HTTP;
+4. Como usar a aba network do navegador;
+5. Como começar no Supabase;
+6. Criando nossa primeira tabela;
+7. Importante: não ativar a proteção de linhas do Supabase;
+8. Usamos o client público do Supabase;
+9. Criamos um service ao final para organizar melhor nosso código.
 
 
 
@@ -40,6 +50,7 @@ Nesasa Imersão React vamos aprender como usar as estruturas de dados que temos 
 
 ```
   "dependencies": {
+    "@supabase/supabase-js": "^2.1.0",
     "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
